@@ -3,6 +3,11 @@ package com.naw.url.model;
 import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
+@Entity
+@Table(name = "short_links", indexes = {
+        @Index(name = "idx_code", columnList = "code", unique = true),
+        @Index(name = "idx_expires_at", columnList = "expires_at")
+})
 public class ShortLink {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
