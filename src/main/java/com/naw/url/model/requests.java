@@ -16,28 +16,4 @@ public class requests {
 
     public requests() {
     }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getCustomAlias() {
-        return customAlias;
-    }
-
-    public void setCustomAlias(String customAlias) {
-        this.customAlias = customAlias;
-    }
-
-    public LocalDateTime getExpiresAt() {
-        return expiresAt;
-    }
-
-    public void setExpiresAt(LocalDateTime expiresAt) {
-        this.expiresAt = expiresAt;
-    }
 }
